@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Промо Шар — печать на воздушных шарах в Москве. Гирлянды, фотозоны, готовые композиции. От 5 рублей за штуку." />
+  <title>Промо Шар — печать на воздушных шарах в Москве</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__balloon loader__balloon--1"></div>
+      <div class="loader__balloon loader__balloon--2"></div>
+      <div class="loader__balloon loader__balloon--3"></div>
+    </div>
+    <p class="loader__text">Готовим праздник…</p>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <span class="header__logo-icon">🎈</span>
+        <span class="header__logo-text">Промо<strong>Шар</strong></span>
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#services" class="header__nav-link">Услуги</a></li>
+          <li><a href="#about" class="header__nav-link">О нас</a></li>
+          <li><a href="#portfolio" class="header__nav-link">Портфолио</a></li>
+          <li><a href="#pricing" class="header__nav-link">Цены</a></li>
+          <li><a href="#reviews" class="header__nav-link">Отзывы</a></li>
+          <li><a href="#contacts" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+74996475147" class="header__phone">+7 499 647-51-47</a>
+        <a href="#contacts" class="btn btn--outline btn--sm">Заказать звонок</a>
+        <button class="header__burger" id="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badge reveal-up">🎉 Более 500 счастливых клиентов</div>
+        <h1 class="hero__title reveal-up" style="--delay:0.1s">
+          Печать на шарах<br />
+          <span class="hero__title-accent">в Москве</span>
+        </h1>
+        <p class="hero__subtitle reveal-up" style="--delay:0.2s">
+          Создаём уникальные шары с вашим дизайном для корпоративов, свадеб, дней рождений и промо-акций. От 5 рублей за штуку.
+        </p>
+        <div class="hero__actions reveal-up" style="--delay:0.3s">
+          <a href="#contacts" class="btn btn--primary btn--lg">Заказать сейчас</a>
+          <a href="#portfolio" class="btn btn--ghost btn--lg">Смотреть работы</a>
+        </div>
+        <div class="hero__stats reveal-up" style="--delay:0.4s">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="500">0</span><span>+</span>
+            <p>проектов</p>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="7">0</span><span>+</span>
+            <p>лет опыта</p>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="30">0</span><span>+</span>
+            <p>заказов в день</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual reveal-right" style="--delay:0.2s">
+        <div class="hero__balloons-wrap">
+          <div class="balloon balloon--pink" style="--tx:0px;--ty:0px;--size:160px;--dur:4s;--delay-f:0s"></div>
+          <div class="balloon balloon--blue" style="--tx:80px;--ty:-40px;--size:120px;--dur:5s;--delay-f:0.5s"></div>
+          <div class="balloon balloon--yellow" style="--tx:-60px;--ty:60px;--size:100px;--dur:3.5s;--delay-f:1s"></div>
+          <div class="balloon balloon--purple" style="--tx:130px;--ty:50px;--size:90px;--dur:4.5s;--delay-f:1.5s"></div>
+          <div class="balloon balloon--coral" style="--tx:-20px;--ty:-90px;--size:75px;--dur:6s;--delay-f:0.3s"></div>
+          <div class="balloon balloon--teal" style="--tx:160px;--ty:-20px;--size:65px;--dur:3s;--delay-f:0.8s"></div>
+          <div class="hero__card hero__card--1">
+            <span>🎨</span> Ваш логотип
+          </div>
+          <div class="hero__card hero__card--2">
+            <span>⚡</span> От 1 дня
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrolling ticker -->
+    <div class="ticker">
+      <div class="ticker__track">
+        <span>Печать на шарах</span><span class="ticker__dot">•</span>
+        <span>Гирлянды</span><span class="ticker__dot">•</span>
+        <span>Фотозоны</span><span class="ticker__dot">•</span>
+        <span>Гелиевые шары</span><span class="ticker__dot">•</span>
+        <span>Готовые композиции</span><span class="ticker__dot">•</span>
+        <span>Индивидуальный дизайн</span><span class="ticker__dot">•</span>
+        <span>Печать на пакетах</span><span class="ticker__dot">•</span>
+        <span>Печать на шарах</span><span class="ticker__dot">•</span>
+        <span>Гирлянды</span><span class="ticker__dot">•</span>
+        <span>Фотозоны</span><span class="ticker__dot">•</span>
+        <span>Гелиевые шары</span><span class="ticker__dot">•</span>
+        <span>Готовые композиции</span><span class="ticker__dot">•</span>
+        <span>Индивидуальный дизайн</span><span class="ticker__dot">•</span>
+        <span>Печать на пакетах</span><span class="ticker__dot">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about__wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,0 L0,0 Z" fill="#fff5f9"/>
+      </svg>
+    </div>
+    <div class="container about__inner">
+      <div class="about__text reveal-left">
+        <span class="section-label">О компании</span>
+        <h2 class="section-title">Мы превращаем<br /><em>шары в искусство</em></h2>
+        <p class="about__desc">
+          Наша команда профессионалов работает с 2017 года. Мы создаём уникальные шары с печатью для любых мероприятий — от детских праздников до корпоративных событий и промо-акций крупных брендов.
+        </p>
+        <p class="about__desc">
+          Работаем с дизайнерами, флористами, ведущими и организаторами мероприятий, чтобы создать идеальный акцент для вашего особенного события.
+        </p>
+        <a href="#contacts" class="btn btn--primary">Заказать услугу</a>
+      </div>
+      <div class="about__visual reveal-right">
+        <div class="about__counters">
+          <div class="counter-card reveal-up" style="--delay:0s">
+            <span class="counter-card__num" data-count="500">0</span><span>+</span>
+            <p>проектов реализовано</p>
+          </div>
+          <div class="counter-card reveal-up" style="--delay:0.15s">
+            <span class="counter-card__num" data-count="7">0</span><span>+</span>
+            <p>лет делаем праздники ярче</p>
+          </div>
+          <div class="counter-card reveal-up" style="--delay:0.3s">
+            <span class="counter-card__num" data-count="30">0</span><span>&gt;</span>
+            <p>заказов ежедневно</p>
+          </div>
+          <div class="counter-card reveal-up" style="--delay:0.45s">
+            <span class="counter-card__num" data-count="98">0</span><span>%</span>
+            <p>довольных клиентов</p>
+          </div>
+        </div>
+        <div class="about__balloons-deco">
+          <div class="deco-balloon deco-balloon--1">🎈</div>
+          <div class="deco-balloon deco-balloon--2">🎀</div>
+          <div class="deco-balloon deco-balloon--3">✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Что мы делаем</span>
+        <h2 class="section-title">Наши услуги</h2>
+        <p class="section-subtitle">Полный спектр услуг для создания праздничного настроения</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card reveal-up" style="--delay:0s">
+          <div class="service-card__icon">🖨️</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Печать на шарах</h3>
+            <p class="service-card__desc">Нанесём ваш логотип, фото или любой дизайн на стандартные латексные шары. Минимальный заказ — 50 штук.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">От 5 ₽/шт</div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.1s">
+          <div class="service-card__icon">🎊</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Гирлянды из шаров</h3>
+            <p class="service-card__desc">Яркие гирлянды из воздушных шаров для оформления входной группы, стен и арок любого размера.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">Под заказ</div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.2s">
+          <div class="service-card__icon">🎆</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Готовые композиции</h3>
+            <p class="service-card__desc">Красивые букеты и композиции из воздушных шаров на все случаи жизни — уже готовы к вашему мероприятию.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">В наличии</div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.3s">
+          <div class="service-card__icon">🛍️</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Печать на пакетах</h3>
+            <p class="service-card__desc">Брендированные пакеты с вашим логотипом и дизайном — отличный способ привлечь внимание к вашему бренду.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">От 10 ₽/шт</div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.4s">
+          <div class="service-card__icon">☁️</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Гелиевые шары</h3>
+            <p class="service-card__desc">Шары под потолок — создадут праздничную атмосферу в любом помещении. Доставка и оформление на месте.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">Доставка</div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.5s">
+          <div class="service-card__icon">📸</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Фотозоны</h3>
+            <p class="service-card__desc">Создадим уникальную фотозону из шаров для вашего события. Идеально для свадеб, корпоративов и промо.</p>
+            <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          </div>
+          <div class="service-card__tag">Монтаж</div>
+        </article>
+
+        <article class="service-card service-card--wide reveal-up" style="--delay:0.6s">
+          <div class="service-card__icon">🎨</div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Индивидуальный проект</h3>
+            <p class="service-card__desc">Разработаем уникальную концепцию оформления вашего мероприятия с нуля — от идеи до реализации.</p>
+            <a href="#contacts" class="service-card__link">Обсудить проект →</a>
+          </div>
+          <div class="service-card__tag">Эксклюзив</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="process" id="process">
+    <div class="process__bg"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Как мы работаем</span>
+        <h2 class="section-title">Всего 4 простых шага</h2>
+      </div>
+      <div class="process__steps">
+        <div class="process-step reveal-up" style="--delay:0s">
+          <div class="process-step__num">01</div>
+          <div class="process-step__icon">📞</div>
+          <h3 class="process-step__title">Заявка</h3>
+          <p class="process-step__desc">Оставляете заявку на сайте или звоните нам. Обсуждаем задачу и пожелания.</p>
+        </div>
+        <div class="process-step__arrow reveal-up" style="--delay:0.1s">→</div>
+        <div class="process-step reveal-up" style="--delay:0.2s">
+          <div class="process-step__num">02</div>
+          <div class="process-step__icon">✏️</div>
+          <h3 class="process-step__title">Макет</h3>
+          <p class="process-step__desc">Наш дизайнер создаёт макет или адаптирует ваш логотип для печати на шарах.</p>
+        </div>
+        <div class="process-step__arrow reveal-up" style="--delay:0.3s">→</div>
+        <div class="process-step reveal-up" style="--delay:0.4s">
+          <div class="process-step__num">03</div>
+          <div class="process-step__icon">🖨️</div>
+          <h3 class="process-step__title">Производство</h3>
+          <p class="process-step__desc">Печатаем на профессиональном оборудовании. Срок — от 1 рабочего дня.</p>
+        </div>
+        <div class="process-step__arrow reveal-up" style="--delay:0.5s">→</div>
+        <div class="process-step reveal-up" style="--delay:0.6s">
+          <div class="process-step__num">04</div>
+          <div class="process-step__icon">🚀</div>
+          <h3 class="process-step__title">Доставка</h3>
+          <p class="process-step__desc">Доставляем в любую точку Москвы и МО. Возможен самовывоз.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Наши работы</span>
+        <h2 class="section-title">Портфолио</h2>
+        <p class="section-subtitle">Посмотрите, что мы уже создали для наших клиентов</p>
+      </div>
+
+      <div class="portfolio__filters reveal-up" style="--delay:0.1s">
+        <button class="filter-btn filter-btn--active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="print">Печать на шарах</button>
+        <button class="filter-btn" data-filter="garland">Гирлянды</button>
+        <button class="filter-btn" data-filter="photo">Фотозоны</button>
+        <button class="filter-btn" data-filter="helium">Гелиевые</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+        <div class="portfolio-item reveal-up" data-category="print" style="--delay:0s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--1">
+              <span>🎈</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Корпоратив Samsung</h4>
+            <p>Печать логотипа на 500 шарах</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="garland" style="--delay:0.1s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--2">
+              <span>🎊</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Гирлянда на свадьбу</h4>
+            <p>Нежная пастельная гамма</p>
+          </div>
+        </div>
+        <div class="portfolio-item portfolio-item--wide reveal-up" data-category="photo" style="--delay:0.2s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--3">
+              <span>📸</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Фотозона на день рождения</h4>
+            <p>Арка из 200 шаров</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="helium" style="--delay:0.3s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--4">
+              <span>☁️</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Гелиевые шары</h4>
+            <p>Оформление зала ресторана</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="print" style="--delay:0.4s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--5">
+              <span>🖨️</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Промо-акция Сбербанк</h4>
+            <p>1000 шаров с логотипом</p>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="garland" style="--delay:0.5s">
+          <div class="portfolio-item__img">
+            <div class="portfolio-item__placeholder portfolio-item__placeholder--6">
+              <span>🎆</span>
+            </div>
+          </div>
+          <div class="portfolio-item__overlay">
+            <h4>Открытие магазина</h4>
+            <p>Гирлянда у входа 15м</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio__cta reveal-up">
+        <a href="#contacts" class="btn btn--primary btn--lg">Заказать похожее</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__bg"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Стоимость</span>
+        <h2 class="section-title">Прозрачные цены</h2>
+        <p class="section-subtitle">Без скрытых платежей. Точная стоимость — после обсуждения проекта.</p>
+      </div>
+
+      <div class="pricing__grid">
+        <div class="pricing-card reveal-up" style="--delay:0s">
+          <div class="pricing-card__header">
+            <span class="pricing-card__icon">🖨️</span>
+            <h3>Стандарт</h3>
+            <p>Для небольших заказов</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">от 5 ₽</span>
+            <span class="pricing-card__unit">/ шт</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>✓ Минимальный заказ 50 шт</li>
+            <li>✓ 1 цвет печати</li>
+            <li>✓ Срок от 3 дней</li>
+            <li>✓ Самовывоз бесплатно</li>
+            <li class="muted">✗ Индивидуальный дизайн</li>
+            <li class="muted">✗ Срочный заказ</li>
+          </ul>
+          <a href="#contacts" class="btn btn--outline">Заказать</a>
+        </div>
+
+        <div class="pricing-card pricing-card--popular reveal-up" style="--delay:0.15s">
+          <div class="pricing-card__badge">Популярно</div>
+          <div class="pricing-card__header">
+            <span class="pricing-card__icon">⭐</span>
+            <h3>Бизнес</h3>
+            <p>Оптимальный выбор</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">от 8 ₽</span>
+            <span class="pricing-card__unit">/ шт</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>✓ Минимальный заказ 100 шт</li>
+            <li>✓ До 4 цветов печати</li>
+            <li>✓ Срок от 1 дня</li>
+            <li>✓ Доставка по Москве</li>
+            <li>✓ Дизайн в подарок</li>
+            <li class="muted">✗ Срочный заказ</li>
+          </ul>
+          <a href="#contacts" class="btn btn--primary">Заказать</a>
+        </div>
+
+        <div class="pricing-card reveal-up" style="--delay:0.3s">
+          <div class="pricing-card__header">
+            <span class="pricing-card__icon">👑</span>
+            <h3>Премиум</h3>
+            <p>Максимум возможностей</p>
+          </div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">Индивид.</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>✓ Любое количество</li>
+            <li>✓ Полноцветная печать</li>
+            <li>✓ Срок от 1 дня</li>
+            <li>✓ Доставка и монтаж</li>
+            <li>✓ Дизайн включён</li>
+            <li>✓ Срочный заказ 24/7</li>
+          </ul>
+          <a href="#contacts" class="btn btn--outline">Обсудить</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Отзывы</span>
+        <h2 class="section-title">Что говорят клиенты</h2>
+        <div class="reviews__stars">
+          ⭐⭐⭐⭐⭐ <span>5.0 / 500+ отзывов</span>
+        </div>
+      </div>
+
+      <div class="reviews__slider" id="reviewsSlider">
+        <div class="reviews__track" id="reviewsTrack">
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar">АН</div>
+              <div>
+                <h4 class="review-card__name">Анна Николаева</h4>
+                <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="review-card__text">«Заказывала шары с логотипом компании для корпоратива. Всё сделали быстро, качество отличное! Коллеги были в восторге. Обязательно обращусь снова.»</p>
+            <span class="review-card__date">15 марта 2024</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar" style="background:var(--purple)">ДМ</div>
+              <div>
+                <h4 class="review-card__name">Дмитрий Морозов</h4>
+                <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="review-card__text">«Делали гирлянду на открытие нашего магазина. Всё сделали профессионально и в срок. Цена адекватная, результат превзошёл ожидания!»</p>
+            <span class="review-card__date">2 апреля 2024</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar" style="background:var(--teal)">ОС</div>
+              <div>
+                <h4 class="review-card__name">Ольга Смирнова</h4>
+                <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="review-card__text">«Заказывала фотозону для свадьбы дочери. Ребята подошли творчески, всё было именно так, как я представляла. Очень довольна!»</p>
+            <span class="review-card__date">20 апреля 2024</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar" style="background:var(--coral)">ИК</div>
+              <div>
+                <h4 class="review-card__name">Игорь Козлов</h4>
+                <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="review-card__text">«Отличная команда! Помогли с дизайном, сделали 200 шаров с фото и логотипом в сжатые сроки. Качество печати на высоте.»</p>
+            <span class="review-card__date">5 мая 2024</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card__header">
+              <div class="review-card__avatar" style="background:var(--yellow)">МВ</div>
+              <div>
+                <h4 class="review-card__name">Мария Васильева</h4>
+                <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <p class="review-card__text">«Брала гелиевые шары для детского праздника. Дети были счастливы! Доставили вовремя, шарики держали форму весь день.»</p>
+            <span class="review-card__date">18 мая 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__controls">
+        <button class="reviews__btn" id="reviewsPrev" aria-label="Предыдущий">←</button>
+        <div class="reviews__dots" id="reviewsDots"></div>
+        <button class="reviews__btn" id="reviewsNext" aria-label="Следующий">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS ===== -->
+  <section class="brands">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">Нам доверяют</span>
+        <h2 class="section-title">Работали с лучшими</h2>
+      </div>
+      <div class="brands__track-wrap">
+        <div class="brands__track">
+          <div class="brand-logo">Samsung</div>
+          <div class="brand-logo">Сбербанк</div>
+          <div class="brand-logo">Яндекс</div>
+          <div class="brand-logo">МТС</div>
+          <div class="brand-logo">Tinkoff</div>
+          <div class="brand-logo">ВТБ</div>
+          <div class="brand-logo">Лукойл</div>
+          <div class="brand-logo">Samsung</div>
+          <div class="brand-logo">Сбербанк</div>
+          <div class="brand-logo">Яндекс</div>
+          <div class="brand-logo">МТС</div>
+          <div class="brand-logo">Tinkoff</div>
+          <div class="brand-logo">ВТБ</div>
+          <div class="brand-logo">Лукойл</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Частые вопросы</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item reveal-up" style="--delay:0s">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Какой минимальный заказ?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Минимальный заказ на печать — от 50 штук. Для готовых композиций и гелиевых шаров ограничений нет — можно заказать от 1 штуки.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up" style="--delay:0.1s">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Сколько времени занимает производство?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Стандартный срок — 2-3 рабочих дня. Срочный заказ выполняем за 1 день или даже быстрее при наличии готового макета.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up" style="--delay:0.2s">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Вы делаете доставку?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Да! Доставляем по Москве и Московской области. Стоимость доставки зависит от района и объёма заказа. Также возможен самовывоз из нашего офиса.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up" style="--delay:0.3s">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Какой файл нужно предоставить для печати?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Принимаем файлы в форматах AI, EPS, PDF, PNG (с прозрачным фоном). Разрешение не менее 300 dpi. Если нет готового файла — наш дизайнер поможет с подготовкой макета.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal-up" style="--delay:0.4s">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>Как долго шары держат форму?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Воздушные шары с воздухом держат форму 3-5 дней. Гелиевые — 8-12 часов в зависимости от размера. Латексные шары со специальной обработкой — до 2 недель.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS / FORM ===== -->
+  <section class="contacts" id="contacts">
+    <div class="contacts__wave">
+      <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,20 C480,80 960,0 1440,40 L1440,0 L0,0 Z" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="container contacts__inner">
+      <div class="contacts__info reveal-left">
+        <span class="section-label section-label--light">Связаться с нами</span>
+        <h2 class="section-title section-title--light">Готовы сделать<br /><em>ваш праздник ярче?</em></h2>
+        <p class="contacts__desc">Оставьте заявку и мы свяжемся с вами в течение 15 минут. Бесплатная консультация и помощь с выбором.</p>
+        <div class="contacts__details">
+          <a href="tel:+74996475147" class="contacts__detail-item">
+            <span class="contacts__detail-icon">📞</span>
+            <div>
+              <p>Телефон</p>
+              <strong>+7 499 647-51-47</strong>
+            </div>
+          </a>
+          <a href="mailto:info@promoshar.ru" class="contacts__detail-item">
+            <span class="contacts__detail-icon">✉️</span>
+            <div>
+              <p>Email</p>
+              <strong>info@promoshar.ru</strong>
+            </div>
+          </a>
+          <div class="contacts__detail-item">
+            <span class="contacts__detail-icon">📍</span>
+            <div>
+              <p>Адрес</p>
+              <strong>Москва, ул. Примерная, д. 1</strong>
+            </div>
+          </div>
+          <div class="contacts__detail-item">
+            <span class="contacts__detail-icon">🕐</span>
+            <div>
+              <p>Режим работы</p>
+              <strong>Пн–Пт: 9:00–19:00, Сб: 10:00–16:00</strong>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__social">
+          <a href="#" class="social-btn" aria-label="ВКонтакте">ВК</a>
+          <a href="#" class="social-btn" aria-label="Telegram">TG</a>
+          <a href="#" class="social-btn" aria-label="WhatsApp">WA</a>
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+
+      <div class="contacts__form-wrap reveal-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3 class="contact-form__title">Оставить заявку</h3>
+          <p class="contact-form__subtitle">Ответим в течение 15 минут</p>
+
+          <div class="form-group">
+            <label class="form-label" for="name">Ваше имя *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Иван Иванов" required />
+            <span class="form-error">Пожалуйста, введите имя</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (999) 999-99-99" required />
+            <span class="form-error">Пожалуйста, введите телефон</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="service">Услуга</label>
+            <select id="service" name="service" class="form-input form-select">
+              <option value="">Выберите услугу</option>
+              <option>Печать на шарах</option>
+              <option>Гирлянды</option>
+              <option>Фотозона</option>
+              <option>Гелиевые шары</option>
+              <option>Готовые композиции</option>
+              <option>Индивидуальный проект</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Комментарий</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Расскажите о вашем мероприятии…" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full btn--lg form-submit">
+            <span class="form-submit__text">Оставить заявку</span>
+            <span class="form-submit__loader" aria-hidden="true"></span>
+          </button>
+
+          <p class="contact-form__consent">
+            Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+          </p>
+        </form>
+
+        <div class="form-success" id="formSuccess" aria-hidden="true">
+          <div class="form-success__icon">🎉</div>
+          <h3>Заявка отправлена!</h3>
+          <p>Мы свяжемся с вами в течение 15 минут.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="header__logo">
+          <span class="header__logo-icon">🎈</span>
+          <span class="header__logo-text">Промо<strong>Шар</strong></span>
+        </a>
+        <p class="footer__tagline">Создаём праздники с 2017 года</p>
+        <div class="contacts__social">
+          <a href="#" class="social-btn social-btn--dark" aria-label="ВКонтакте">ВК</a>
+          <a href="#" class="social-btn social-btn--dark" aria-label="Telegram">TG</a>
+          <a href="#" class="social-btn social-btn--dark" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <nav class="footer__nav">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#services">Печать на шарах</a></li>
+          <li><a href="#services">Гирлянды</a></li>
+          <li><a href="#services">Фотозоны</a></li>
+          <li><a href="#services">Гелиевые шары</a></li>
+          <li><a href="#services">Готовые композиции</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <h4>Контакты</h4>
+        <a href="tel:+74996475147">+7 499 647-51-47</a>
+        <a href="mailto:info@promoshar.ru">info@promoshar.ru</a>
+        <p>Москва, ул. Примерная, д. 1</p>
+        <p>Пн–Пт: 9:00–19:00</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2024 ПромоШар. Все права защищены.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
